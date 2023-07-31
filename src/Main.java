@@ -89,6 +89,6 @@ public class Main {
         employeeBook.changeEmployee("Хлопачев Иван Максимович", 1, 5);
         employeeBook.printBookContact();
         System.out.println();
-        employeeBook.printListAllEmployeesByDepartament();
+        employeeBook.printListAllEmployeesByDepartment();
     }
 }

@@ -4,6 +4,7 @@ import java.util.Objects;
 public class EmployeeBook {
     private final Employee[] employees = new Employee[10];
     private int size;
+    private final int amountDepartment = 5;
 
     @Override
     public String toString() {
@@ -200,8 +201,8 @@ public class EmployeeBook {
         }
     }
 
-    public void printListAllEmployeesByDepartament() {
-        for (int departament = 1; departament <= 5; departament++) {
+    public void printListAllEmployeesByDepartment() {
+        for (int departament = 1; departament <= amountDepartment; departament++) {
             for (int j = 0; j < size; j++) {
                 if (employees[j].getDepartment() == departament)
                     System.out.println(employees[j].getDepartment() + " " + employees[j].getFullName());
